@@ -98,7 +98,7 @@
         <entry file="file://$PROJECT_DIR$/CryptoProtoCode/specs/cryptoSpecs.js">
           <provider selected="true" editor-type-id="text-editor">
             <state vertical-scroll-proportion="0.35253456" vertical-offset="0" max-vertical-offset="868">
-              <caret line="18" column="113" selection-start-line="18" selection-start-column="113" selection-end-line="18" selection-end-column="113" />
+              <caret line="18" column="150" selection-start-line="18" selection-start-column="150" selection-end-line="18" selection-end-column="150" />
               <folding />
             </state>
           </provider>
@@ -351,7 +351,11 @@
       <created>1415297895203</created>
       <updated>1415297895203</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Started setting up Specs&#10;">
+      <created>1415300167606</created>
+      <updated>1415300167606</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="ToolWindowManager">
@@ -514,7 +518,7 @@
     <entry file="file://$PROJECT_DIR$/CryptoProtoCode/specs/cryptoSpecs.js">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.35253456" vertical-offset="0" max-vertical-offset="868">
-          <caret line="18" column="113" selection-start-line="18" selection-start-column="113" selection-end-line="18" selection-end-column="113" />
+          <caret line="18" column="150" selection-start-line="18" selection-start-column="150" selection-end-line="18" selection-end-column="150" />
           <folding />
         </state>
       </provider>

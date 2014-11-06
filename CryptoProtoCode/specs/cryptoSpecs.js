@@ -16,7 +16,7 @@ describe("Cryptogram Processing Specs", function () {
                     it("should have no zero percent letters", function () {
                         var item = getLetterFreq(plainLetterOne);
                         var zeroPercentLetterFound = false;
-                        //I don't like this and it needs some serious refactoring. I've been up for 33 hours now.
+                        //I don't like this and it needs some serious refactoring. I've been up for 33 hours now and am having logical thinking issues.
                         for (var i in item) {
                             console.log(" i : " + i);
                             if(i.indexOf("%1") >= 0){
