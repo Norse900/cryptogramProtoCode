@@ -9,7 +9,7 @@ describe("Cryptogram Processing Specs", function(){
         describe("Letter Frequency Specs", function(){
             describe("Obtaining The Frequency Specs", function(){
                 it("should find the frequency of each letter", function(){
-                    var item = getLetterFreq(plainLetterOne);
+                    var item = getLetterFreq(plainLetterOne); console.log(item);
                     expect(item).not.toBeNull();
                 });
             });

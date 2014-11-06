@@ -6,7 +6,7 @@ function getLetterFreq(text){
    for (var i = 0 ; i < text.length; i++){
        if(textArray[text.charAt(i)]){
            textArray[text.charAt(i)] += 1;
-          // console.log(textArray[text.charAt(i)]);
+        //   console.log(textArray[text.charAt(i)]);
        } else{
            textArray[text.charAt(i)] = 1;
           // console.log(textArray[text.charAt(i)]);
@@ -14,7 +14,11 @@ function getLetterFreq(text){
    }
     for(var g in textArray){
         var value = textArray[g];
-    console.log("end item : "+ g+ ":" + textArray[g] );
+    //console.log("end item : "+ g+ ":" + textArray[g] );
     }
     return textArray;
+}
+function sortAscending(arrayToSort){
+    arrayToSort.sort();
+    return arrayToSort;
 }
