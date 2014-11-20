@@ -35,9 +35,9 @@ describe("Cryptogram Processing Specs", function () {
      Q	205	 	Q	0.11
      J	188	 	J	0.10
      Z	128	 	Z	0.07
-    * \*/
+     * \*/
     // ETAOINSRHDLUCMFYWGPBVKXOJZ
-     describe("Analysis Specs", function () {
+    describe("Analysis Specs", function () {
         describe("Letter Frequency Specs", function () {
             describe("Obtaining The Frequency Specs", function () {
                 it("should find the frequency of each letter", function () {
@@ -49,20 +49,43 @@ describe("Cryptogram Processing Specs", function () {
                     var item = getLetterFreq(plainLetterOne);
                     var zeroPercentLetterFound = 0;
                     //I don't like this and it needs some serious refactoring. I've been up for 33 hours now and am having logical thinking issues.
-                    for(var i in item) {
+                    for (var i in item) {
 
                         if (i.charAt(0).indexOf("0") < 0 && i.charAt(1).indexOf("0") > 0) {
                             zeroPercentLetterFound = 1;
                             return;
                         } else {
-                            //console.log(" i : " + i.charAt(0) + " - " + i.charAt(1));
-                            console.log( i + " : "  + item[i]);
-                            //console.log(" i.(0) : " + i.charAt(0) + " i.(1) : " + i.charAt(1));
+                            //console.log(i + " : " + item[i]);
+
                         }
                     }
                     expect(zeroPercentLetterFound).not.toBeGreaterThan(0);
                 });
                 it("should list the letters and their frequency", function () {
+                    var item = getLetterFreq(plainLetterOne);
+                    var boolHasPercent = false;
+                    var newArray = sortAscending(item);
+                    var plainTextLength = plainLetterOne.length;
+
+                    for (var i in item) {
+                        var percent = ((item[i]/plainTextLength)* 100).toFixed(3);
+                        if(percent < 0){
+                            boolHasPercent = true;
+
+                        }
+                        expect(boolHasPercent).toBeFalsy();
+
+                     /*  var punctionorsymbolslist = "!@#$%^.,?&*'() {}[]///\/|";
+                        var punccheck = punctionorsymbolslist.indexOf(i);
+                        if (punccheck < 0) {
+
+                            console.log(i + " : " + ((item[i]/plainTextLength)* 100).toFixed(3) + "%");
+
+                        }*/
+                    }
+                   /* for (var i in newArray){
+                        console.log("item " + i + " : " + item[i]);
+                    }*/
                 });
             });
         });
