@@ -44,7 +44,6 @@ describe("Cryptogram Processing Specs", function () {
                     var item = getLetterFreq(plainLetterOne); //console.log(item);
                     expect(item).not.toBeNull();
                 });
-
                 it("should have no zero percent letters", function () {
                     var item = getLetterFreq(plainLetterOne);
                     var zeroPercentLetterFound = 0;
@@ -68,27 +67,28 @@ describe("Cryptogram Processing Specs", function () {
                     var plainTextLength = plainLetterOne.length;
 
                     for (var i in item) {
-                        var percent = ((item[i]/plainTextLength)* 100).toFixed(3);
-                        if(percent < 0){
+                        var percent = ((item[i] / plainTextLength) * 100).toFixed(3);
+                        if (percent < 0) {
                             boolHasPercent = true;
 
                         }
                         expect(boolHasPercent).toBeFalsy();
 
-                     /*  var punctionorsymbolslist = "!@#$%^.,?&*'() {}[]///\/|";
-                        var punccheck = punctionorsymbolslist.indexOf(i);
-                        if (punccheck < 0) {
+                        /*  var punctionorsymbolslist = "!@#$%^.,?&*'() {}[]///\/|";
+                         var punccheck = punctionorsymbolslist.indexOf(i);
+                         if (punccheck < 0) {
 
-                            console.log(i + " : " + ((item[i]/plainTextLength)* 100).toFixed(3) + "%");
+                         console.log(i + " : " + ((item[i]/plainTextLength)* 100).toFixed(3) + "%");
 
-                        }*/
+                         }*/
                     }
-                   /* for (var i in newArray){
-                        console.log("item " + i + " : " + item[i]);
-                    }*/
+                    /* for (var i in newArray){
+                     console.log("item " + i + " : " + item[i]);
+                     }*/
                 });
             });
         });
+
     });
 });
 
